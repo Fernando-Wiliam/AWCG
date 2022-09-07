@@ -1,0 +1,125 @@
+*{
+    font-family: philosopher, lora, Merriweather, Cinzel, Fauna One, Libre Baskerville, Spectral;
+}
+
+
+.AW_background_dark{
+    color: rgb(214, 214, 214);
+    background-color: rgb(16, 18, 31);
+    background-image: url("./imgs/BACKGROUND/BG\ -\ CARTAS\ -\ FULL\ HD\ -\ Gray\ opacity\ 5\ -\ sem\ cor\ de\ fundo.png");
+    background-size: 1920px;
+}
+
+.AW_background_light {
+    color: rgb(16, 18, 31);
+    background-color: rgb(218, 221, 243);
+    background-image: url("./imgs/BACKGROUND/BG\ -\ CARTAS\ -\ FULL\ HD\ -\ Gray\ opacity\ 5\ -\ sem\ cor\ de\ fundo.png");
+    background-size: 1920px;
+}
+
+
+.AW_menu_box {
+  
+    border-left-style: solid;
+    border-left-color: goldenrod;
+    border-left-width: 2px;
+    border-radius: 6px 2px;
+
+
+    background-color: rgb(16, 18, 31);
+    background-image: url("./imgs/BACKGROUND/BG\ -\ CARTAS\ -\ FULL\ HD\ -\ color\ opacity\ 5\ -\ sem\ cor\ de\ fundo.png");
+    background-size: 720px ;
+    box-shadow: 2px 2px 2px black;
+
+}
+
+
+.AW_menu_title_box {
+  
+    border-left-style: solid;
+    border-left-width: thin;
+    border-radius: 6px 2px;
+    padding-left: 10px;
+
+
+    background-color: rgb(16, 18, 31);
+    background-image: url("./imgs/BACKGROUND/BG\ -\ CARTAS\ -\ FULL\ HD\ -\ color\ opacity\ 5\ -\ sem\ cor\ de\ fundo.png");
+    background-size: 720px ;
+    box-shadow: 2px 2px 2px black;
+
+
+    cursor: pointer;
+
+}
+
+.AW_background_dark .AW_menu_title_box{
+
+    background-color: rgb(16, 18, 31);
+    border-left-color: orange;
+}
+
+.AW_background_light .AW_menu_title_box{
+
+    background-color: rgb(218, 221, 243);
+    border-left-color: rgb(0, 68, 255);
+}
+
+
+.font-effect-fire {
+  text-shadow: 0 -0.05em 0.2em #FFF, 0.01em -0.02em 0.15em #FE0, 0.01em -0.05em 0.15em #FC0, 0.02em -0.15em 0.2em #F90, 0.04em -0.20em 0.3em rgb(255, 51, 0), 0.05em -0.25em 0.4em rgb(255, 25, 0), 0.06em -0.2em 0.9em rgb(255, 0, 0), 0.1em -0.1em 1.0em rgb(255, 0, 0);
+  color: #ffe;
+}
+.font-effect-neon {
+  text-shadow: 0 0 0.1em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff, 0 0 0.4em rgb(119, 198, 255),0 0 0.6em rgb(0, 115, 255), 0 0 0.8em rgb(0, 51, 255), 0 0 1.0em rgb(8, 0, 255), 0 0 1.2em rgb(0, 94, 255);
+  color: #fff;
+}
+
+.card_box{
+    display: inline-block;
+    background-color: rgb(21, 21, 21);
+    width: 10cm;
+    height: 14cm;
+    border-style: groove;
+    border-width: 6px;
+    border-color: #F90;
+    border-radius: 3px;
+
+}
+.menu_botao_fixo{
+    display: inline;
+    font-size: 30px;
+    padding: 6px;
+
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    opacity: 0.9;
+}
+
+*::first-letter{
+    font-family: FLASH GENOCIDE;
+    font-size: 140%;
+    font-weight: 300;
+
+}
+
+.AW_Fist_Letter1::first-letter{
+    font-family: MILLENIGEM;
+    font-size: 140%;
+    font-weight: 100;
+
+}
+
+.AW_Fist_Letter2::first-letter{
+    font-family: Sunroll;
+    font-size: 140%;
+    font-weight: 100;
+
+}
+
+.AW_Fist_Letter3::first-letter{
+    font-family: BRADLEYCHICOPEEW00-REGULAR;
+    font-size: 140%;
+    font-weight: 100;
+
+}
