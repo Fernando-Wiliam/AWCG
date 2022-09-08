@@ -1,0 +1,23 @@
+
+
+.botao_A{
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--aw-red1);
+    font-size: 30px;
+    box-sizing: border-box;
+
+    transition-property: background-color, padding, border-radius;
+    transition-duration: 500ms, 1s, 1s;
+    transition-delay: 0.1s, 200ms, 100ms;
+    transition-timing-function: ease-in-out, ease;
+
+}
+
+.botao_A:hover{
+    background-color: var(--aw-yelow);
+    color: var(--aw-deepdepp-Blue);
+    padding: 10px 25px ;
+    border-radius: 6px;
+}
