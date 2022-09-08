@@ -1,0 +1,200 @@
+body, ul, li, p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: rgb(169, 169, 169);
+}
+
+h1{
+    text-align: center;
+
+}
+h2{
+    text-align: center;
+
+}
+
+/*CSS HEADER*/
+
+.AW_Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 5px 10px 5px 10px;
+
+    margin: 10px;
+
+    background-color: rgba(10, 9, 10, 0.681);
+}
+
+.AW_Menu_ul{
+    display: flex;
+}
+
+
+.AW_Menu_ul li{
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    
+
+}
+
+.AW_Menu_ul a{
+    padding: 10px 50px 10px 50px;
+
+    transition-property: background-color, padding;
+    transition-duration: 1s, 2s ;
+
+}
+
+.AW_Menu_ul a:hover{
+    color: black;
+    background-color: goldenrod ;
+    padding: 10px 60px 10px 60px;
+    font-weight: 800;
+    border-radius: 3px;
+}
+
+@media (max-width: 1050px ){
+
+    .AW_Header{
+        display: block;
+    
+        padding: 20px;
+    
+        background-color: rgba(10, 9, 10, 0.681);
+
+        text-align: center;
+
+    }
+
+    .AW_Menu_ul{
+        display: block;
+        margin-right: 6px;
+    }
+
+    .AW_Menu_ul a{
+        padding: 10px 50px 10px 50px;
+    }
+
+    .AW_Menu_ul a:hover{
+        color: black;
+        background-color: goldenrod ;
+        font-weight: 800;
+        border-radius: 3px;
+    }
+
+
+
+}
+
+/*CSS HEADER*/
+
+
+/* CARD FLEXBOX */
+
+
+
+.flex_card_container img{
+    max-width: 100%;
+    display: block;
+}
+
+.flex_card_container{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.flex_card_container > div{
+    flex: 1 1 200px;
+}
+
+.flex_card_container img:hover{
+    width: calc(100% - 3%);
+    border: solid 2px rgba(255, 255, 255, 0.841);
+    border-radius: 6px;
+}
+
+.card_container{
+    display: inline-block;
+}
+
+.card_container > img{
+    width: 240px;
+}
+
+/* CARD FLEXBOX */
+
+
+
+
+
+/* CARD GRID LAYOUT */
+
+/* CARD GRID LAYOUT */
+.grid_card_container_1 img{
+    max-width: 100%;
+    display: block;
+}
+
+
+.grid_card_container_1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.grid_card_container_1 > div:nth-child(n + 4){
+    /* estou pegado todas as div dentro do container grid_card_container_1 com o sinal >
+        depois estou pegando todos os filhos a partir do 4º 
+        e vou aplicar para estes selecionados as seguintes modificações */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.grid_card_container_1 > div.anuncio{
+    background-color: rgba(16, 3, 34, 0.357);
+    grid-column: 1;
+    grid-row: 2 / 5;
+    display: block;
+}
+
+@media (max-width: 600px){
+    .grid_card_container_1{
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .grid_card_container_1 > div:nth-child(n + 4){
+        display: block;
+    }
+
+    .grid_card_container_1 > div.anuncio{
+        grid-column: auto;
+        grid-row: auto;
+        order: -1;
+    }
+
+
+}
+
+
+
+
+

@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="id_html" class="AW_background_dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./background.css">
+    <script src="./background.js"></script>
+    <link rel="shortcut icon" href="./imgs/favicon.ico" type="image/x-icon">
+    <title>Document</title>
+
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+
+    <h1 class="AW_menu_title_box AW_Fist_Letter4"> ANIME <span style="font-family: FLASH GENOCIDE; font-size: 140%; font-weight: 100; ">W</span>AR</h1>
+
+    <h1 style="font-family: FLASH GENOCIDE ; font-weight: 100;">ANIME WAR</h1>
+
+
+    <h2 class="AW_Fist_Letter4">CSS - W3schools</h2>
+
+    <div class="AW_menu_title_box AW_Fist_Letter3">
+        BACKGROUND
+    </div>
+
+
+    <div class="AW_menu_title_box" style="margin:auto">
+        Margin: auto - centraliza a div
+    </div>
+
+    <div style="height: 200px; width: 50%; background-color: rgb(7, 2, 2); border-radius: 6px; margin-top: 20px; ">
+        <div style="height: 200px; width: 50%; background-color: brown">
+            Esta DIV ocupa metade da div preta, que é sua mãe. width: 50%; <br><br> A div preta ocupa metade da tela,
+            que é sua mãe. width: 50%;
+        </div>
+    </div>
+
+    <div style="background-color: rgb(41, 41, 47);">
+        <div
+            style="width: 50%; background-color: rgb(11, 44, 72); padding: 50px; border: 10px groove rgb(255, 176, 19); border-width: 12px; border-radius: 6px; outline-offset: 15px; margin: 50px; text-align: center; ">
+            content
+        </div>
+    </div>
+
+    <div style=" width: 300px; height: 120px; text-align: center; display: inline-block;">
+
+        <span class="font-effect-fire" style="font-size: 60px;">
+            ATAQUE!
+        </span>
+    </div>
+
+    <div style=" width: 300px; height: 120px; text-align: center; display: inline-block;">
+
+        <span class="font-effect-neon" style="font-size: 60px;">
+            DEFESA!
+        </span>
+    </div>
+    
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    <h2> posição: relativa; </h2>
+    <p>Definir as propriedades superior, direita, inferior e esquerda de um elemento relativamente posicionado fará com
+        que ele seja ajustado para fora de sua posição normal. Outros conteúdos não serão ajustados para caber em
+        qualquer lacuna deixada pelo elemento.
+    </p>
+
+    <div class="card_box" style=" position: relative;">
+
+    </div>
+
+
+    <div class="card_box" style=" position: relative; left: 60px; top:60px">
+    </div>
+
+
+
+    <h2>posição: fixa;</h2>
+    <p>
+        Um elemento com position: fixed;é posicionado em relação à janela de visualização, o que significa que ele
+        sempre permanece no mesmo lugar, mesmo que a página seja rolada. As propriedades top, right, bottom e left são
+        usadas para posicionar o elemento.
+
+        Um elemento fixo não deixa uma lacuna na página onde normalmente estaria localizado.
+
+        EX.: Observe o botão 'MENU' no canto superior direito
+    </p>
+
+    <div class="menu_botao_fixo AW_menu_title_box">
+        MENU
+    </div>
+
+
+    <h2>posição: absoluta;</h2>
+    <p>
+        Um elemento com position: absolute;é posicionado em relação ao ancestral posicionado mais próximo (em vez de
+        posicionado em relação à janela de visualização, como fixo).
+
+        No entanto; se um elemento posicionado absoluto não tiver ancestrais posicionados, ele usará o corpo do
+        documento e se moverá junto com a rolagem da página.
+
+        Nota: Os elementos posicionados absolutos são removidos do fluxo normal e podem sobrepor elementos.
+    </p>
+
+
+    <div class="AW_menu_title_box card_box" style="position: relative; font-size: 40px">
+        Este elemento DIV tem posição: relativa;
+
+        <div class="AW_menu_title_box "
+            style="position: absolute; font-size: 15px; padding: 10px; top: 12cm; right: 0.2cm; ">
+            Este elemento div tem posição: absoluta;
+        </div>
+    </div>
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    <h2>Z-INDEX</h2>
+
+    <style>
+        .container {
+            position: relative;
+            border: solid;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .blackbox {
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.692);
+            height: 100px;
+            margin: 20px;
+            box-shadow: 1px 1px 1px black;
+            z-index: 1;
+        }
+
+        .graybox {
+            position: absolute;
+            background-color: rgba(128, 128, 128, 0.915);
+            height: 60px;
+            width: 70%;
+            left: 50px;
+            top: 130px;
+            box-shadow: 1px 1px 1px black;
+            z-index: 3;
+        }
+
+        .yelowbox {
+            position: absolute;
+            background-color: rgb(255, 166, 0);
+            color: black;
+            height: 170px;
+            width: 35%;
+            left: 190px;
+            top: -15px;
+            box-shadow: 1px 1px 1px black;
+
+            z-index: 2;
+        }
+    </style>
+
+    <div class="container"> container
+        <div class="blackbox">BLACK BOX (z-index: 1) <br> <br> <span style="margin-left: 600px; opacity: 0.5;"> A caixa
+                preta está atrás de todos, pois seu z-index é o menor dentre os divs filhos de container</span></div>
+        <div class="graybox"> GRAYBOX (z-index: 3)</div>
+        <div class="yelowbox">YELOWBOX (z-index: 2)</div>
+    </div>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    <div style="background-color: rgba(21, 6, 70, 0.414); padding: 3px; border-radius: 6px;">
+        <h2> OUVERFLOW </h2>
+
+        <p>
+            A propriedade CSS overflowcontrola o que acontece com o conteúdo grande demais para caber em uma área.
+        </p>
+
+        <style>
+            .overflow_div {
+                width: 200px;
+                height: 65px;
+                background-color: coral;
+                overflow: visible;
+                display: inline-block;
+            }
+        </style>
+
+
+        <div class="overflow_div">
+            <span style="display: block; font-size: 26px; color: black;">overflow: visible</span>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt libero non perferendis, voluptates officiis
+            maiores! Nam, minus eius. Ea praesentium eos dolore qui error reprehenderit neque rem laudantium blanditiis
+            animi!
+        </div>
+
+        <div class="overflow_div" style="overflow: hidden;">
+            <span style="display: block; font-size: 26px; color: black;">overflow: hidden</span>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt libero non perferendis, voluptates officiis
+            maiores! Nam, minus eius. Ea praesentium eos dolore qui error reprehenderit neque rem laudantium blanditiis
+            animi!
+        </div>
+
+        <div class="overflow_div" style="overflow: scroll; ">
+            <span style="display: block; font-size: 26px; color: black; ">overflow: scroll</span>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt libero non perferendis, voluptates officiis
+            maiores! Nam, minus eius. Ea praesentium eos dolore qui error reprehenderit neque rem laudantium blanditiis
+            animi!
+        </div>
+
+        <div class="overflow_div" style="overflow: scroll; overflow-x: hidden;">
+            <span style="display: block; font-size: 26px; color: black; ">overflow: scroll overflow-x</span>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt libero non perferendis, voluptates officiis
+            maiores! Nam, minus eius. Ea praesentium eos dolore qui error reprehenderit neque rem laudantium blanditiis
+            animi!
+        </div>
+    </div>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    <div
+        style="border: solid 3px rgb(186, 186, 186); padding-left: 6px; padding-right: 6px; margin-top: 12px; background-color: rgba(0, 0, 0, 0.529);">
+        <h2>FLOAT</h2>
+
+
+        <style>
+            .caixa_retangular {
+                background-color: rgb(0, 106, 255);
+                height: 20px;
+                width: 400px;
+                text-align: center;
+            }
+
+            .float_left {
+                float: left;
+            }
+
+            .float_right {
+                float: right;
+            }
+        </style>
+
+        <div class="float_left caixa_retangular"> Float left </div>
+        <div class="float_right caixa_retangular"> Float right </div>
+        <p style="text-align: center;">A floatpropriedade é usada para posicionar e formatar o conteúdo, por exemplo,
+            deixar uma imagem flutuar à esquerda do texto em um contêiner.</p>
+
+
+        <div style="border: solid 2px rgba(255, 255, 255, 0.219); padding: 6px; margin-bottom: 6px;">
+
+            <h3>FLOAT: NONE</h3>
+
+            <p><img src="https://unicarioca-my.sharepoint.com/personal/2018102407_aluno_unicarioca_edu_br/Documents/Fernando%20Wiliam%20-%20Meus%20Arquivos/Anime%20Hero%20Card%20Game/Vers%C3%A3o%208/--%20CARTAS%20--/Cartas/Vers%C3%A3o%208.4/Personagens/Personagem%20-%20Itachi%20Uchiha%20-%20Fogo,%20Ps%C3%ADquico,%20Trevas%20-%20NRT.png"
+                    alt="itachi-card" width="10%" style="padding: 2px; float: none;">
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum,
+                nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Mecenas nisl est, ultrices nec
+                congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis
+                sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.
+                Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. Em líbero sed nunc venenatis imperdiet
+                sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Inteiro fringilla congue eros non
+                fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit. <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum,
+                nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Mecenas nisl est, ultrices nec
+                congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis
+                sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.
+                Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. Em líbero sed nunc venenatis imperdiet
+                sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Inteiro fringilla congue eros non
+                fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+            </p>
+
+        </div>
+
+        <div style="border: solid 2px rgba(255, 255, 255, 0.219); padding: 6px; margin-bottom: 6px; overflow: auto;">
+
+            <h3>FLOAT: LEFT - Clearfix (overflow: auto)</h3>
+
+            <p><img src="https://unicarioca-my.sharepoint.com/personal/2018102407_aluno_unicarioca_edu_br/Documents/Fernando%20Wiliam%20-%20Meus%20Arquivos/Anime%20Hero%20Card%20Game/Vers%C3%A3o%208/--%20CARTAS%20--/Cartas/Vers%C3%A3o%208.4/Personagens/Personagem%20-%20Itachi%20Uchiha%20-%20Fogo,%20Ps%C3%ADquico,%20Trevas%20-%20NRT.png"
+                    alt="itachi-card" width="10%" style="padding: 2px; float: left;">
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum,
+                nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Mecenas nisl est, ultrices nec
+                congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis
+                sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.
+                Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. Em líbero sed nunc venenatis imperdiet
+                sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Inteiro fringilla congue eros non
+                fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit. <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum,
+                nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Mecenas nisl est, ultrices nec
+                congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis
+                sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.
+                Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. Em líbero sed nunc venenatis imperdiet
+                sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Inteiro fringilla congue eros non
+                fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+            </p>
+
+            <p style="font-size:36px; text-align: center;"> Para que a imagem fique ajustada dentro dos limites do
+                container, é preciso que div container tenha a propriedade OVERFLOW: AUTO </p>
+
+        </div>
+
+
+
+    </div>
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .box {
+            float: left;
+            width: 33.33%;
+            padding: 50px;
+            opacity: 0.7;
+        }
+    </style>
+
+    <h3>Grid of Boxes</h3>
+    <p>Float boxes side by side:</p>
+
+    <div>
+        <div class="box" style="background-color: gray;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, eaque totam voluptatem a officia
+                aspernatur sunt eligendi id vero praesentium similique vel non dignissimos consequatur debitis earum
+                dolore? Minima, consectetur.</p>
+        </div>
+
+        <div class="box" style="background-color: rgb(80, 79, 79);">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, eaque totam voluptatem a officia
+                aspernatur sunt eligendi id vero praesentium similique vel non dignissimos consequatur debitis earum
+                dolore? Minima, consectetur.</p>
+        </div>
+
+        <div class="box" style="background-color: rgb(56, 56, 56);">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, eaque totam voluptatem a officia
+                aspernatur sunt eligendi id vero praesentium similique vel non dignissimos consequatur debitis earum
+                dolore? Minima, consectetur.</p>
+        </div>
+
+    </div>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    <div style="width: 50%;">
+  
+        <style>
+            .cartas_ladoalado {
+                float: left;
+                padding: 5px;
+                width: 25%;
+    
+            }
+        </style>
+
+        <h2>imagens lado a lado</h2>
+
+        <div style="background-color: rgba(0, 31, 110, 0.123); border: solid 1px white; overflow: auto; border-radius: 6px; box-shadow: 3px 3px 6px black;">
+            <img src="https://unicarioca-my.sharepoint.com/personal/2018102407_aluno_unicarioca_edu_br/Documents/Fernando%20Wiliam%20-%20Meus%20Arquivos/Anime%20Hero%20Card%20Game/Vers%C3%A3o%208/--%20CARTAS%20--/Cartas/Vers%C3%A3o%208.4/Personagens/Personagem%20-%20Shiryu%20de%20Drag%C3%A3o%20-%20%C3%81gua%20-%20CDZ.png"
+                alt="shiryu-card" width="5%" class="cartas_ladoalado">
+
+
+
+            <img src="https://unicarioca-my.sharepoint.com/personal/2018102407_aluno_unicarioca_edu_br/Documents/Fernando%20Wiliam%20-%20Meus%20Arquivos/Anime%20Hero%20Card%20Game/Vers%C3%A3o%208/--%20CARTAS%20--/Cartas/Vers%C3%A3o%208.4/Personagens/Personagem%20-%20Tobirama%20Senju%20-%20Agua,%20Raio,%20Arma%20-%20NRT.png"
+                alt="tobirama-card" width="5%" class="cartas_ladoalado">
+
+
+            <img src="https://unicarioca-my.sharepoint.com/personal/2018102407_aluno_unicarioca_edu_br/Documents/Fernando%20Wiliam%20-%20Meus%20Arquivos/Anime%20Hero%20Card%20Game/Vers%C3%A3o%208/--%20CARTAS%20--/Cartas/Vers%C3%A3o%208.4/Personagens/Personagem%20-%20Dohko%20de%20Libra%20-%20%C3%81gua,%20luz,%20arma%20-%20CDZ.png"
+                alt="dohko-card" width="5%" class="cartas_ladoalado">
+
+
+                <img src="https://unicarioca-my.sharepoint.com/personal/2018102407_aluno_unicarioca_edu_br/Documents/Fernando%20Wiliam%20-%20Meus%20Arquivos/Anime%20Hero%20Card%20Game/Vers%C3%A3o%208/--%20CARTAS%20--/Cartas/Vers%C3%A3o%208.4/Personagens/Personagem%20-%20Dohko%20de%20Libra%20-%20%C3%81gua,%20luz,%20arma%20-%20CDZ.png"
+                    alt="dohko-card" width="5%" class="cartas_ladoalado">
+        </div>
+
+    </div>
+
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    <div style="border: solid 2px rgba(173, 173, 173, 0.42); padding: 6px; margin-top: 6px; width: 50%; border-radius: 6px;">
+        <div>
+
+            <h3>menu de navegação</h3>
+
+            <style>
+
+                .menu_navegacao_expl{
+                    color: white;
+
+                }
+
+
+                .menu_navegacao_expl ul{
+
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                    background-color: black;
+                }
+
+                .menu_navegacao_expl li {
+                    float: left;
+                }
+
+                .menu_navegacao_expl a {
+                    display: inline-block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+
+                .menu_navegacao_expl a:hover {
+                    background-color: rgba(0, 0, 0, 0.491);
+                    color: #ffe;
+
+                    border-radius: 3px;
+                    box-shadow: 2px 1px 2px black;
+                }
+                .menu_navegacao_expl a:active{                    
+                    
+                    text-shadow: 0 -0.05em 0.2em #FFF, 0.01em -0.02em 0.15em #FE0, 0.01em -0.05em 0.15em #FC0, 0.02em -0.15em 0.2em #F90, 0.04em -0.20em 0.3em rgb(255, 51, 0), 0.05em -0.25em 0.4em rgb(255, 25, 0), 0.06em -0.2em 0.9em rgb(255, 0, 0), 0.1em -0.1em 1.0em rgb(255, 0, 0);
+
+
+                }
+                .active{
+                    background-color: rgba(195, 1, 1, 0.374);
+                    border-radius: 3px;
+                }
+
+            </style>
+
+            <div style="border: solid 3px black; box-sizing: content-box;">
+                
+                <ul class="">
+                    <li> <a href="#home" class="active">Home</a></li>
+                    <li> <a href="#news">News</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <li> <a href="#about">About</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    <h1>ENTENDENDO MELHOR O BOX MODEL</h1>
+
+    <p> - Os elementos são enxergados pelo browser como caixas. Quandradas ou retangulares</p>
+    <p>É composto de 4 partes que definem o limete ppara o conteudo (content)</p>
+    <p>1-Margin <br> 2-Boder <br> 3-Padding <br> 4-Content (text, imag, video)</p>
+
+    <p> <strong style="font-size: 130%;">box-model: content-box </strong>  -  Os limites da caixa serão os limites de seus elementos internos (conteudo). <br> Por exemplo, se a div está definida como <strong style="font-size: 130%;"> 100px por 100px</strong>, mas ela tem um um elemento qualquer com <strong style="font-size: 130%;"> 80px por 160px </strong>, ela vai aumentar o seu tamanho em <strong style="font-size: 130%;">60px</strong> para caber o conteudo. Ela terá então <strong style="font-size: 130%;">100px por 160px</strong> </p>
+
+    <p> <strong style="font-size: 130%;">box-model: boder-box </strong>  -  Os limites da caixa serão fixos conforme definido, independente do tamanho de seus elementos internos. <br> Se algum elemento possuir tamnho que não caiba na caixa, o conteúdo vazará. <br> É possível controlar o que acontece com o conteúdo vazado usando as propriedados do OVERFLOW </p>
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    <br>
+
+    Exemplo de layout da Web
+
+    <style>
+        .container_div_pai{
+            box-sizing: border-box;
+
+            background-color: rgba(255, 255, 255, 0.692);
+            width: 1000px;
+            height: 500px;
+
+            margin-left: auto;
+            margin-right: auto;
+
+            border-radius: 8px;
+        }
+
+        .div_header, .div_footer {
+            background-color: rgba(128, 128, 128, 0.685);
+            color: whwite;
+            padding: 15px;
+            margin: 8px;
+            
+
+        }
+
+        .column{
+            float: left;
+            padding: 15px;
+        }
+
+        .clearfix::after{
+            content: "";
+            clear:both;
+            display: table;
+        }
+
+        .menu{
+            width: 25%;
+        }
+
+        .content{
+            width: 75%;
+            color: black;
+        }
+
+        .menu ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li{
+           padding: 8px;
+           margin-bottom: 8px;
+           background-color: #33b5e5;
+           color: #ffffff; 
+        }
+
+        .menu li:hover{
+            background-color: #c4c4c4;
+            color: black;
+        }
+    </style>
+
+    <div class="container_div_pai ">
+
+        <div class="div_header ">
+            <h1>Chania</h1>
+        </div>
+
+        <div class="clearfix">
+            <div class="column menu ">
+                <ul>
+                    <li class="AW_menu_title_box">The Flight</li>
+                    <li class="AW_menu_title_box">The City</li>
+                    <li class="AW_menu_title_box">The Island</li>
+                    <li class="AW_menu_title_box">The Food</li>
+                </ul>
+            </div>
+
+            <div class="column content">
+                <h1>The City</h1>
+                <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+                <p>You will learn more about web layout and responsive web pages in a later chapter</p>
+            </div>
+
+        </div>
+
+        <div class="div_footer"> 
+            <p>Footer text</p>
+        </div>
+
+
+    </div>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    <h2>Elementos de alinhamento central</h2>
+
+    <p>Para centralizar horizontalmente um elemento de bloco (como div), use <strong style="font-size: 160%;">margin: auto</strong> ; <br>
+
+        Definir a largura do elemento impedirá que ele se estenda até as bordas de seu contêiner. <br>
+        
+        O elemento então ocupará a largura especificada e o espaço restante será dividido igualmente entre as duas margens:</p>
+
+        <div style="border: solid 3px white; margin: auto; padding: 10px; width: 80%;">
+            <p>Este elemento é centralizado. Seu width é de 80%. Por isso temos espaços vazios de 10% em cada lado</p>
+        </div>
+
+        <p>Nota: O alinhamento ao centro não tem efeito se a widthpropriedade não estiver definida (ou definida como 100%).</p>
+
+        <div style="border: solid 3px white; margin: auto; padding: 10px; width: 80%; text-align: center;">
+            <p>Este elemento é centralizado. Seu width é de 80%. Por isso temos espaços vazios de 10% em cada lado</p>
+            <p> Temos agora o texto alinhado ao centro com text-align: center</p>
+        </div>
+
+        <h2>Centralizar uma imagem</h2>
+
+        <div style="border: solid 3px rgba(255, 255, 255, 0.052); margin: auto; padding: 10px; width: 80%; text-align: center; overflow: hidden;">
+            <p>Usando o mesmo método acima, apenas colocando a tag img dentro da div ja centralizada</p>
+            <p>Também está com overflow: hidden, porque quando a tela diminuir, o logo vai desaparecendo conforme o espaço da div diminui</p>
+            <img src="./imgs/LOGO ALPHA.png" alt="">
+        </div>
+
+        <p style="text-align: center;"> usando diretamente a tag img, sem estar dentro de uma div centralizada. Neste caso, é preciso usar margin-left: auto; margin-right: auto;</p>
+
+        <img src="./imgs/LOGO ALPHA.png" alt="Logo" style="display: block; margin-left: auto; margin-right: auto;">
+
+        <p>Este está com o with definido (inicialmente com 37%), diferente dos acima. Assim, a imagem diminui e aumenta conforme o tamano da tela</p>
+        <p>Além disso, possui min-width: 230px e max-width: 860px.</p>        
+        <img src="./imgs/LOGO ALPHA.png" alt="Logo" style="display: block; margin-left: auto; margin-right: auto; width: 37%; min-width: 230px; max-width: 860px;">
+
+        <h2>Alinhar à esquerda e à direita - Usando a posição</h2>
+
+
+        <div style="position: absolute; right: 0px; width: 300px; border: 3px solid gray; padding: 3px; text-align: center;">
+
+            <p>item alinhado a direita usando position: absolute</p>
+        </div>
+
+        <br><br><br><br>
+
+        <h3>Centralizar verticalmente - usando preenchimento</h3>
+
+        <h4>Existem muitas maneiras de centralizar um elemento verticalmente em CSS. Uma solução simples é usar top e bottom padding:</h4>
+
+        <div style=" border: 3px solid rgba(0, 128, 0, 0.329); padding: 70px 10px; margin: auto;">
+            <p>Estou centrado verticalmente</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus iste commodi aliquam. Vero mollitia veritatis sed asperiores, cupiditate possimus accusamus soluta velit iusto minima ipsum, ea sunt aliquam blanditiis placeat.Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus iste commodi aliquam. Vero mollitia veritatis sed asperiores, cupiditate possimus accusamus soluta velit iusto minima ipsum, ea sunt aliquam blanditiis placeat.Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus iste commodi aliquam. Vero mollitia veritatis sed asperiores, cupiditate possimus accusamus soluta velit iusto minima ipsum, ea sunt aliquam blanditiis placeat.Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus iste commodi aliquam. Vero mollitia veritatis sed asperiores, cupiditate possimus accusamus soluta velit iusto minima ipsum, ea sunt aliquam blanditiis placeat.Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus iste commodi aliquam. Vero mollitia veritatis sed asperiores, cupiditate possimus accusamus soluta velit iusto minima ipsum, ea sunt aliquam blanditiis placeat.Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus iste commodi aliquam. Vero mollitia veritatis sed asperiores, cupiditate possimus accusamus soluta velit iusto minima ipsum, ea sunt aliquam blanditiis placeat.Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus iste commodi aliquam. Vero mollitia veritatis sed asperiores, cupiditate possimus accusamus soluta velit iusto minima ipsum, ea sunt aliquam blanditiis placeat.</p>
+        </div>
+
+        <h3>Centralizar verticalmente - Usando posição e transformação</h3>
+
+        <h4>Se paddinge line-height não forem opções, outra solução é usar o posicionamento e a transformpropriedade:</h4>
+
+        <div style=" border: 3px solid rgba(0, 128, 0, 0.329); height: 200px; position: relative;">
+            <p style="margin: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsam, quibusdam esse iusto facere quae minus repellendus nobis, voluptatum inventore, voluptatem labore commodi sed aliquam! Maxime tenetur vitae odio nihil?</p>
+
+        </div>
+
+        <h3>Centralizar Verticalmente - Usando Flexbox</h3>
+
+        <h4>Você também pode usar o flexbox para centralizar as coisas. Apenas observe que o flexbox não é suportado no IE10 e em versões anteriores:</h4>
+
+        <div style=" border: 3px solid rgba(0, 128, 0, 0.329); height: 200px; display: flex; align-items: center; justify-content: center;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsam, quibusdam esse iusto facere quae minus repellendus nobis, voluptatum inventore, voluptatem labore commodi sed aliquam! Maxime tenetur vitae odio nihil?</p>
+
+        </div>
+
+        <br><br><br><br><br><br><br><br><br><br>
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <div>
+            <img src="./imgs/LOGO - NOVO/LOGO - CARD - AW ANIME WAR CARD GAME.png" alt="" width="15%">
+            <img src="./imgs/LOGO - NOVO/LOGO - RETANGULAR - ANIME WAR CARD GAME.png" alt="" width="30%">
+            <img src="./imgs/LOGO - NOVO/LOGO - CARD - AW ANIME WAR CARD GAME - VAZADO.png" alt="" width="15%">
+        </div>
+        </div>
+
+        <style>
+            .container_amarelo{
+                width: 90%;
+                height: 200px;
+                background-color: #F90;
+                
+                margin: auto;
+                text-align: center;
+            }
+
+            .caixa_azul{
+                width: calc(104% - 30px);
+                height: 60px;
+                background-color: #33b5e5;
+                margin: auto;
+            }
+
+            .caixa_verde{
+                display: inline-block;
+                
+                width: calc(100% - 300px);
+                height: 150px;
+
+                min-width: 150px;
+
+                margin-right: -4px;
+
+                background-color: green;
+            }
+
+            .caixa_vermelha{
+                display: inline-block;
+                width: 150px;
+                height: 150px;
+                background-color: rgb(128, 0, 0);
+            }
+        </style>
+
+        <div class="container_amarelo">
+
+            <div class="container_caixa_azul " style="overflow: hidden;">
+                <div class="caixa_azul"> caixa azul </div>
+            </div>
+
+            <div class="caixa_verde"> caixa verde </div>
+
+            <div class="caixa_vermelha"> caixa vermelha</div>
+
+
+
+        </div>
+
+        ---------------------------------------------------------------------------------------------------------
+        ---------------------------------------------------------------------------------------------------------
+        ---------------------------------------------------------------------------------------------------------
+        ---------------------------------------------------------------------------------------------------------
+        ---------------------------------------------------------------------------------------------------------
+
+        <h1>Transformações</h1>
+
+        <style>
+            .tranf_img{
+                transform: rotate(90deg) scale(1.1);
+            }
+        </style>
+
+        <div>
+            <img class="tranf_img" src="./imgs/LOGO - NOVO/LOGO - CARD - AW ANIME WAR CARD GAME.png" alt="" width="15%">
+            <img src="./imgs/LOGO - NOVO/LOGO - CARD - AW ANIME WAR CARD GAME - VAZADO.png" alt="" width="15%">
+        </div>
+
+
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        <h1>FLEXBOX</h1>
+
+ 
+        
+
+
+
+
+</body>
+
+</html>

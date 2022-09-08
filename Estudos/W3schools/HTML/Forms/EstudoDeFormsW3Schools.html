@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            font-family: philosopher;
+        }
+
+        input{
+            /*para ficar um elemento debaixo do outro*/
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Tag FORM</h1>
+
+    <h2 style="background-color: rgb(194, 192, 192);"> Inputs </h2>
+
+    <form>
+        <input type="text"> texto
+        <br>
+        <input type="button" value="botão"> botão
+        <br>
+        <input type="color"> cor
+        <br>
+        <input type="date"> data
+        <br>
+        <input type="email"> email
+        <br>
+        <input type="file"> Arquivo
+        <br>
+        <input type="hidden"> escondido
+        <br>
+        <input type="image"> imagem
+        <br>
+        <input type="month"> mês
+        <br>
+        <input type="number"> numero        
+        <br>
+        <input type="password"> senha
+        <br>
+        <input type="radio"> radio
+        <br>
+        <input type="range"> range
+        <br>
+        <input type="reset"> reset
+        <br>
+        <input type="search"> buscar
+        <br>
+        <input type="time"> time
+        <br>
+        <input type="url"> url
+        <br>
+        <input type="submit"> submit
+        <br>
+        <input type="tel"> tel
+        <br>
+        <input type="week"> week
+
+    </form>
+
+    <h2> Selecione sua linguagem web favorita</h2>
+    
+    <form>
+    
+        <input type="radio" id="html" name="linguagem_favorita" value="HTML">
+        <label for="html">HTML</label> 
+        
+        <br>
+
+        <input type="radio" id="css" name="linguagem_favorita" value="CSS">
+        <label for="css">CSS</label>
+
+        <br>
+
+        <input type="radio" id="javascript" name="linguagem_favorita" value="JS">
+        <label for="javascript">JS</label>
+           
+    </form>
+
+    <h2> Selecione suas linguagens web favoritas</h2>
+    
+    <form>
+    
+        <input type="checkbox" id="html" name="linguagem_favorita" value="HTML">
+        <label for="html">HTML</label> 
+        
+        <br>
+
+        <input type="checkbox" id="css" name="linguagem_favorita" value="CSS">
+        <label for="css">CSS</label>
+
+        <br>
+
+        <input type="checkbox" id="javascript" name="linguagem_favorita" value="JS">
+        <label for="javascript">JS</label>
+           
+    </form>
+
+    <h2>Botão de envio</h2>
+
+    <form action="action_page.js">
+
+        <label for="primeiro_nome"> Primeiro Nome: </label> <br>
+        <input type="text" id="primeiro_nome"  name="primeiro_nome" value="Fernando" placeholder="Nome">
+
+        <br>
+
+        <label for="Ultimo_nome"> Ultimo Nome</label> <br>
+        <input type="text" id="ultimo_nome" name="ultimo_nome" value="Wiliam" placeholder="sobrenome">
+
+        <br>
+
+        <input type="submit" value="submit">
+
+
+    </form>
+    
+</body>
+</html> 
