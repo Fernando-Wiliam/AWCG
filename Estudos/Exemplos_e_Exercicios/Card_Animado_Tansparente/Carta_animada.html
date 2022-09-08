@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="AW_background_dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../../AW_colors.css">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../AW_styles.css">
+    <link rel="stylesheet" href="./Carta_animada.css">
+    <title>Card Animado</title>
+</head>
+
+<body>
+
+    <div class="cards_container">
+
+        <div class="card">
+            <div class="card_content">
+                <h2>01</h2>
+                <h3>card Um</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore perferendis enim ipsum voluptatibus
+                    ab, praesentium illo dolorem non error molestiae at quibusdam cumque vel voluptas impedit dicta
+                    reprehenderit sed maxime?</p>
+                <a href="#"> Mais Informações </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_content">
+                <h2>02</h2>
+                <h3>card Dois</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore perferendis enim ipsum voluptatibus
+                    ab, praesentium illo dolorem non error molestiae at quibusdam cumque vel voluptas impedit dicta
+                    reprehenderit sed maxime?</p>
+                <a href="#"> Mais Informações </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_content">
+                <h2>03</h2>
+                <h3>card Três</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore perferendis enim ipsum voluptatibus
+                    ab, praesentium illo dolorem non error molestiae at quibusdam cumque vel voluptas impedit dicta
+                    reprehenderit sed maxime?</p>
+                <a href="#"> Mais Informações </a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script type="text/javascript" src="./vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            reverse: true,
+            speed:400,
+            glare: true,
+            "max-glare":0.5
+
+        });
+    </script>
+</body>
+
+</html>
