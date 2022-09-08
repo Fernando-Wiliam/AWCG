@@ -9,7 +9,7 @@
 .AW_background_dark{
     color: rgb(214, 214, 214);
     background-color: rgb(16, 18, 31);
-    background-image: url("./imgs/BACKGROUND/BG\ -\ CARTAS\ -\ FULL\ HD\ -\ Gray\ opacity\ 5\ -\ sem\ cor\ de\ fundo.png");
+    background-image: url("./imgs/BACKGROUND/BG\ _CARTAS_FULLHD_GrayOpacity5_semcordefundo\ _COMPACTADO.png");
     background-size: 1920px;
 }
 
@@ -100,29 +100,7 @@
 }
 
 *::first-letter{
-    font-family: FLASH GENOCIDE;
     font-size: 140%;
     font-weight: 300;
-
-}
-
-.AW_Fist_Letter1::first-letter{
-    font-family: MILLENIGEM;
-    font-size: 140%;
-    font-weight: 100;
-
-}
-
-.AW_Fist_Letter2::first-letter{
-    font-family: Sunroll;
-    font-size: 140%;
-    font-weight: 100;
-
-}
-
-.AW_Fist_Letter3::first-letter{
-    font-family: BRADLEYCHICOPEEW00-REGULAR;
-    font-size: 140%;
-    font-weight: 100;
 
 }
