@@ -1,5 +1,6 @@
 
-/*  */
+/* ESTUDO Keyframes */
+/* caixa_A - mudar cor e aumentar o tamanho */
 
 @keyframes mudarCordaCaixa_1{
     from {background-color: red;}
@@ -31,8 +32,9 @@
     50% {background-color: var(--aw-yelow); width: 99.7%;}
     100% {background-color: var(--aw-blue1); width: 100px}
 }
+/* caixa_A - mudar cor e aumentar o tamanho */
 
-.caixa{
+.caixa_A{
     width: 100px;
     height: 100px;
     border: solid;
@@ -41,9 +43,77 @@
     animation-duration: 6s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 2;
-    /* animation-delay: -2s; */
+    animation-delay: 1s;
     /* animation-direction: reverse; */
+    /* animation-fill-mode: fowwards; /* A animação termina e congela no ultimo frame da animação.  */
+    /* animation-fill-mode: backwards; /* A animação já começa no primeiro frame da animação. PRECISA TER UM DELAY  */
+    animation-fill-mode: both; /* Inicia com o primeiro frame e termina com o ultimo  */
+}
+
+/* caixa_B - MOVER CAIXA */
+
+@keyframes moverCaixa{
+    0% {left: 0px}
+    100% {left: 300px}
+
+}
+
+.caixa_B{
+    width: 100px;
+    height: 100%;
+    border: solid;
+    position: relative;
+    overflow: auto;
+
+    animation-name: moverCaixa;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 3;
+    /* animation-delay: 1s; */
+    animation-direction: alternate;
+     animation-fill-mode: forwards; /* A animação termina e congela no ultimo frame da animação.  */
+    /* animation-fill-mode: backwards; /* A animação já começa no primeiro frame da animação. PRECISA TER UM DELAY  */
+    /* animation-fill-mode: both; /* Inicia com o primeiro frame e termina com o ultimo  */
+}
+
+@keyframes moverCaixasFilhas{
+    0% {left: 0px}
+    100% {left: 70%}
+
+}
+.caixa_B0{
+    width: 30px;
+    height: 30px;
+    border: solid;
+    position: relative;
+    overflow: auto;
+
+    animation-name: moverCaixasFilhas;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 3;
     animation-fill-mode: forwards;
+    animation-direction: alternate-reverse; 
+}
+
+.caixa_B1{
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+.caixa_B2{
+    animation-timing-function: ease-in; 
+    animation-iteration-count: 6;
+}
+.caixa_B3{
+    animation-timing-function: ease-out;
+    animation-iteration-count: 5;
+}
+.caixa_B4{
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 4;
+}
+.caixa_B5{
+    animation-timing-function: linear;
 }
 
 /*  */
