@@ -47,6 +47,11 @@ body {
     opacity: 0;
     transition: 0.5s;
 }
+.cards_container .card:hover{
+
+    backdrop-filter: blur(5px) ;
+    
+}
 
 .cards_container .card:hover .card_content{
     transform: translateY(0px);
