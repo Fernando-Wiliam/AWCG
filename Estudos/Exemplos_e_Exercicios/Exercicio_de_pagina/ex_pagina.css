@@ -1,0 +1,175 @@
+body{
+
+    overflow: hidden;
+}
+
+/* CONTEINER */
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+   
+   
+    margin: auto;
+    border-radius: 2px;
+
+    width: 95%;
+    height: 100%;
+
+
+    
+
+}
+/* CONTEINER */
+
+
+/* PARTE SUPERIOR */
+
+.menu_superior{
+    display: flex;
+    align-self: flex-start;
+    padding: 10px;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.menu_superior ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+} 
+.menu_superior ul li:nth-child(2){
+    margin-left: 6px;
+    font-weight: bolder;
+}
+
+.menu_superior li a{
+    color: white;
+    font-size: 20px;
+    padding: 6px;
+    font-weight: normal;
+}
+
+.menu_superior_2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+
+}
+
+.menu_barra_central{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    
+
+    border-radius: 6px;
+    width: 80%;
+
+    backdrop-filter: blur(6px);
+    background-color: rgba(240, 248, 255, 0.105);
+}
+
+.menu_barra_central ul{
+    padding: 4px;
+}
+
+.menu_barra_central li img{
+    opacity: 0.3;
+}
+.menu_barra_central li img:hover{
+    opacity: 1;
+    transition-duration: 0.4s;
+}
+
+
+.btn_menu_superior_2{
+    backdrop-filter: blur(6px);
+    background-color: rgba(240, 248, 255, 0.105);
+
+    padding: 16px 26px ;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+.btn_menu_superior_2:hover{
+    cursor: pointer;
+    border-bottom: solid 3px var(--aw-dark-Yelow) ;
+    transition-duration: 1s;
+    transition-timing-function: ease ;
+}
+
+
+
+
+
+
+
+
+
+/* PARTE SUPERIOR */
+
+
+/* PARTE CENTRAL */
+
+
+.Cards_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    
+
+
+    overflow: auto;
+    border-radius: 6px;
+    
+    width: 80%;
+    height: 100vh;
+
+
+
+
+}
+.Cards_container img{
+    width: 220px;
+    padding: 6px;
+}
+
+.Cards_container img:hover{
+    border: solid 3px var(--aw-red1);
+    border-radius: 6px;
+    padding: 1px;
+    transition-duration: 0.4s;
+}
+
+
+.menu_lateral_esquerdo{
+    position: absolute;
+    display: flex;
+    justify-self: flex-start;
+    align-self: flex-start;
+    margin-top: 160px;
+    background-color: ;
+    
+}
+.menu_lateral_esquerdo ul li{
+    margin-bottom: 10px;
+}
+
+.menu_lateral_esquerdo ul li a{
+    padding: 6px 10px;
+    color: white;
+}
+
+.menu_lateral_esquerdo ul li a:hover{
+    backdrop-filter: blur(6px);
+    background-color: rgba(240, 248, 255, 0.105);
+    border-radius: 6px;
+    border-left: solid 2px var(--aw-dark-Yelow);
+    transition-duration: 0.6s;
+
+}
