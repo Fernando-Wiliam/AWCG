@@ -1,0 +1,85 @@
+.container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+a{
+    color: var(--aw-dark-Yelow);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: 0.3s;
+    font-size: 24px;
+    position: relative;
+    
+}
+
+a:hover{
+    color: white;
+    text-shadow: 0 0 4px white, 0 0 12px white, 0 0 20px white;
+    background: var(--aw-red1);
+    box-shadow: 0 0 10px var(--aw-red1), 0 0 40px var(--aw-red1), 0 0 80px var(--aw-red1);
+    transition-delay: 0.1s;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+a span{
+    position: absolute;
+    display: block;
+}
+
+a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, red); 
+}
+
+a:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+
+a span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, red); 
+}
+
+a:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+}
+
+a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, red); 
+}
+
+a:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+}
+
+a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, red); 
+}
+
+a:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+}
