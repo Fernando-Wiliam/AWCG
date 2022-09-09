@@ -1,17 +1,18 @@
-body{
+body {
 
     overflow: hidden;
+    
 }
 
 /* CONTEINER */
 
-.container{
+.container {
     display: flex;
     align-items: center;
     flex-direction: column;
-    
-   
-   
+
+
+
     margin: auto;
     border-radius: 2px;
 
@@ -19,15 +20,16 @@ body{
     height: 100%;
 
 
-    
+
 
 }
+
 /* CONTEINER */
 
 
 /* PARTE SUPERIOR */
 
-.menu_superior{
+.menu_superior {
     display: flex;
     align-self: flex-start;
     padding: 10px;
@@ -35,24 +37,25 @@ body{
     border-radius: 6px;
 }
 
-.menu_superior ul{
+.menu_superior ul {
     display: flex;
     align-items: center;
     flex-direction: row;
-} 
-.menu_superior ul li:nth-child(2){
+}
+
+.menu_superior ul li:nth-child(2) {
     margin-left: 6px;
     font-weight: bolder;
 }
 
-.menu_superior li a{
+.menu_superior li a {
     color: white;
     font-size: 20px;
     padding: 6px;
     font-weight: normal;
 }
 
-.menu_superior_2{
+.menu_superior_2 {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -60,46 +63,51 @@ body{
 
 }
 
-.menu_barra_central{
+.menu_barra_central {
     display: flex;
     flex-direction: row;
     align-items: center;
 
-    
+
 
     border-radius: 6px;
     width: 80%;
 
     backdrop-filter: blur(6px);
     background-color: rgba(240, 248, 255, 0.105);
+
+    overflow: auto;
 }
 
-.menu_barra_central ul{
+.menu_barra_central ul {
     padding: 4px;
 }
 
-.menu_barra_central li img{
+.menu_barra_central li img {
     opacity: 0.3;
 }
-.menu_barra_central li img:hover{
+
+.menu_barra_central li img:hover {
     opacity: 1;
     transition-duration: 0.4s;
 }
 
 
-.btn_menu_superior_2{
+.btn_menu_superior_2 {
     backdrop-filter: blur(6px);
     background-color: rgba(240, 248, 255, 0.105);
 
-    padding: 16px 26px ;
+    padding: 16px 26px;
     border-radius: 6px;
     margin-right: 10px;
+    
 }
-.btn_menu_superior_2:hover{
+
+.btn_menu_superior_2:hover {
     cursor: pointer;
-    border-bottom: solid 3px var(--aw-dark-Yelow) ;
+    border-bottom: solid 3px var(--aw-dark-Yelow);
     transition-duration: 1s;
-    transition-timing-function: ease ;
+    transition-timing-function: ease;
 }
 
 
@@ -116,60 +124,138 @@ body{
 /* PARTE CENTRAL */
 
 
-.Cards_container{
+.Cards_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 40px;
-    
+
 
 
     overflow: auto;
     border-radius: 6px;
-    
+
     width: 80%;
     height: 100vh;
 
 
 
 
+
 }
-.Cards_container img{
+
+.Cards_container img {
     width: 220px;
     padding: 6px;
 }
 
-.Cards_container img:hover{
+.Cards_container img:hover {
     border: solid 3px var(--aw-red1);
     border-radius: 6px;
     padding: 1px;
     transition-duration: 0.4s;
 }
 
-
-.menu_lateral_esquerdo{
+.menu_lateral_esquerdo {
     position: absolute;
     display: flex;
     justify-self: flex-start;
     align-self: flex-start;
     margin-top: 160px;
-    background-color: ;
-    
+
 }
-.menu_lateral_esquerdo ul li{
+
+.menu_lateral_esquerdo ul li {
     margin-bottom: 10px;
 }
 
-.menu_lateral_esquerdo ul li a{
+.menu_lateral_esquerdo ul li a {
     padding: 6px 10px;
     color: white;
 }
 
-.menu_lateral_esquerdo ul li a:hover{
+.item_menu_lateral{
+    width: 180px;
+}
+.item_menu_lateral:hover{
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
     backdrop-filter: blur(6px);
-    background-color: rgba(240, 248, 255, 0.105);
+    background-color: rgba(255, 255, 255, 0.064);
+    border-left: solid 2px;
+
+}
+
+.item_menu_lateral span{
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    font-weight: bolder;
+    padding: 0 6px;
     border-radius: 6px;
-    border-left: solid 2px var(--aw-dark-Yelow);
-    transition-duration: 0.6s;
+
+    background-color: rgba(0, 0, 0, 0.073);
+}
+
+@media (max-width: 414px) {
+
+    .item_menu_lateral{
+        width: 150px;
+    }
+
+    
+
+    .container {
+        overflow-x: hidden;
+        overflow-y: scroll;
+
+    }
+
+    .Cards_container {
+        width: 60%;
+        margin-left: 150px;
+
+
+    }
+
+    .Cards_container img {
+        width: 100px;
+        padding: 6px;
+    }
+
+
+    .btn_menu_superior_2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .btn_menu_superior_2 span {
+        padding: 10px;
+    }
+
+    .btn_menu_superior_2{
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu_superior {
+        padding: 10px 0 10px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu_lateral_esquerdo ul li a {
+        padding: 6px 10px;
+        color: white;
+        font-size: 12px;
+    }
+    
+    
+
+
 
 }
