@@ -6,6 +6,26 @@ body {
 
 /* CONTEINER */
 
+.Menu_logo{
+    position: absolute;
+    z-index: 10;
+
+    width: 160px;
+
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.644);
+    backdrop-filter: blur(2px);
+    border-radius: 6px;
+
+    opacity: 0;
+}
+
+.Menu_logo ul{
+    display: flex;
+    flex-direction: column;
+
+}
+
 .container {
     display: flex;
     align-items: center;

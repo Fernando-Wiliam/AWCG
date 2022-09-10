@@ -1,0 +1,84 @@
+/* header */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+
+    background-color: var(--aw-deepdepp-Blue);
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin-left: 10px;
+}
+
+.menu li a{
+    padding: 10px;
+    color: white;
+}
+
+/* header */
+
+
+/*GRID */
+
+.grid_container{
+    background-color: yellow;
+
+
+}
+
+.pesquisar{
+    background-color: rgb(112, 158, 255);
+}
+
+.menu_elementos{
+    background-color: rgb(97, 128, 196);
+}
+
+.menu2{
+    display: flex; 
+    background-color: rgb(19, 46, 105);
+}
+.menu2 ul{
+    display: flex;
+}
+
+
+.menu_lateral_esq{
+    display: flex;
+    background-color: brown;
+}
+.menu_lateral_dir{
+    display: flex;
+    background-color: rgb(165, 42, 118);
+}
+
+.menu_superior_cards_1{
+    display: flex;
+}
+.menu_superior_cards_2{
+    display: flex;
+}
+
+
+
+
+
+
+.cards_container{
+    display: flex;
+}
+.card{
+    width: 260px;
+    background-color: black;
+    padding: 6px;
+    border: solid 2px ;
+
+}
