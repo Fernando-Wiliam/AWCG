@@ -124,7 +124,7 @@
 
     display: flex;
     padding: 6px;
-    background-color: brown;020
+    background-color: brown;
 }
 .menu_lateral_esq ul li div {
 
@@ -136,12 +136,7 @@
 
     background-color: black;
     display: flex;
- 01   justify-content: flex-end;
- 0.
- ,
-
-
- m,₢₢₢₢₢
+    justify-content: flex-end;
 
 }
 
