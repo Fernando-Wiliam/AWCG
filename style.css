@@ -18,3 +18,44 @@ a{
 a:visited{
     color: rgb(209, 0, 70);
 }
+
+
+/*   BARRA SCROLL  */
+
+::-webkit-scrollbar{
+    width: 3px;
+    height: 3px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0.515);
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(rgba(0, 0, 0, 0.14),rgba(255, 255, 255, 0.225), rgba(0, 0, 0, 0.173));
+}
+::-webkit-scrollbar-thumb:hover{
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.133),rgb(255, 255, 255), rgba(0, 0, 0, 0.076));
+}
+
+/*  BARRA SCROLL  */
+
+
+/* SELEC MENU */
+select{
+    background: none;
+    color: white;
+    font-size: 20px;
+    opacity: 0.6;
+    transition: opacity, 0.6s;
+}
+
+select:hover{
+    opacity: 1;
+}
+
+
+option{
+    background-color: rgb(0, 0, 0);
+}
+
+/* SELEC MENU */
