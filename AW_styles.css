@@ -7,7 +7,12 @@
 
 
 
-
+/* .AW_background_dark{
+    color: rgb(214, 214, 214);
+    background-color: rgb(16, 18, 31);
+    background-image: url("./imgs/BACKGROUND/BG\ _CARTAS_FULLHD_GrayOpacity5_semcordefundo\ _COMPACTADO.png");
+    background-size: 1920px;
+} */
 .AW_background_dark{
     color: rgb(214, 214, 214);
     background-color: rgb(16, 18, 31);
@@ -27,6 +32,8 @@
 
 .AW_background_dark{
     color: rgb(214, 214, 214);
+
+
     background-color: rgb(16, 18, 31);
     background-image: url("./imgs/BACKGROUND/BG\ _CARTAS_FULLHD_GrayOpacity5_semcordefundo\ _COMPACTADO.png");
     background-size: 1080px;
