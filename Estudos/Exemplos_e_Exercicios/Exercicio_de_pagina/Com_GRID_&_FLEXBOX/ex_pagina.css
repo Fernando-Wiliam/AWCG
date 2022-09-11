@@ -1,3 +1,39 @@
+/*   BARRA SCROLL  */
+
+::-webkit-scrollbar{
+    width: 3px;
+    height: 3px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0.515);
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(rgba(0, 0, 0, 0.14),rgba(255, 255, 255, 0.225), rgba(0, 0, 0, 0.173));
+}
+::-webkit-scrollbar-thumb:hover{
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.133),rgb(255, 255, 255), rgba(0, 0, 0, 0.076));
+}
+
+/*  BARRA SCROLL  */
+
+select{
+    background: none;
+    color: white;
+    font-size: 20px;
+    opacity: 0.6;
+    transition: opacity, 0.6s;
+}
+
+select:hover{
+    opacity: 1;
+}
+
+
+option{
+    background-color: rgb(0, 0, 0);
+}
+
 
 
 /*GRID */
@@ -7,7 +43,7 @@
     grid-template-columns: 10% 75% 1fr;
     grid-template-rows: auto auto 1fr;
 
-    gap: 6PX;
+    gap: 6px;
 
     padding: 20px;
 
@@ -115,28 +151,59 @@
 
 /* MENU LATERAL ESQ */
 
-.menu_lateral_esq{
-    grid-row: 3;
-    grid-column: 1;
+.menu_lateral{
     overflow: auto;
+    display: flex;
 
     height: 200px;
 
-    display: flex;
-    padding: 6px;
-    background-color: brown;
+    /* background-color: yellow; */
 }
-.menu_lateral_esq ul li div {
+.menu_lateral ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    /* background-color: red; */
+    width: 100%;
+}
+
+.menu_lateral ul li div {
+    box-sizing: border-box;
 
     display: flex;
     justify-content: space-between;
+    padding: 0 6px;
 
+    border-radius: 2px;
+
+    opacity: 0.6;
+
+    transition: backdrop-filter, 0.3s;
+
+
+    /* background-color: blue; */
 }
-.menu_lateral_esq ul li div span{
+.menu_lateral ul li div:hover{
+    backdrop-filter: blur(4px);
+    background: linear-gradient(45deg,var(--aw-deepdepp-Blue),rgba(0, 0, 255, 0.067));
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.556);
+    border-left: solid 2px white;
+    opacity: 1;
+    
+}
+.menu_lateral ul li div a{
+    margin-left: 6px;
+    color: white;
+    font-size: 14px;
+    /* background-color: green; */
+}
+.menu_lateral ul li div span{
 
-    background-color: black;
+    backdrop-filter: blur(6px);
     display: flex;
-    justify-content: flex-end;
+    justify-self: flex-end;
+
+    /* background-color: purple; */
 
 }
 
@@ -145,7 +212,6 @@
 
 .menu_lateral_dir{
     display: flex;
-    background-color: rgb(165, 42, 118);
 }
 
 /* CARDS CONTAINER */
