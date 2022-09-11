@@ -27,19 +27,42 @@
     grid-column: 1/4;   /*AS COLUNAS QUE O HEADER VAI OCUPAR*/
  
 
-    padding: 20px;
+    padding: 4px;
     border-radius: 7px 0;
+    height: 70px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+    backdrop-filter: blur(4px);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.668);
 
-    background: linear-gradient(45deg, var(--aw-deepdepp-Blue), rgba(0, 0, 255, 0.067));
+
 }
+
+.logo{
+    width: 50px;
+    padding: 6px;
+    opacity: 0.8;
+    
+    transition: width, 0.1s;
+}
+
+.logo:hover{
+    cursor: pointer;
+    width: 55px;
+    opacity: 1;
+}
+
+
+
 
 .menu {
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+
 }
 
 .menu li {
@@ -49,9 +72,39 @@
 .menu li a {
     padding: 10px;
     color: white;
+
+    opacity: 0.5;
+
+    transition: padding, 0.5s;
 }
 
+.menu li a:hover {
+
+    padding: 10px 16px;
+    border-radius: 3px;
+    backdrop-filter: blur(4px);
+
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.733);
+    opacity: 1;
+
+    
+}
+.menu li a:focus {
+
+    padding: 8px 80px;
+    border-radius: 3px;
+    backdrop-filter: blur(4px);
+
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.733);
+    opacity: 1;
+
+    
+}
+
+
 /* header */
+
+
 
 
 
@@ -103,7 +156,17 @@
     border-radius: 4px;
 
 
+
 }
+
+.menu_elementos ul li{
+    opacity: 0.5;
+}
+.menu_elementos ul li:hover{
+    opacity:1;
+    cursor: pointer;
+}
+
 
 .menu_elementos ul {
     justify-content: flex-start;
